@@ -32,11 +32,11 @@
       <h2>Hi, I'm <span class="highlight">Achyut</span></h2>
       <p class="tagline">Data Scientist | AI Engineer | Tech Explorer</p>
       <p class="about-paragraph">
-        "Obsessed with solving hard problems using data, I engineer AI-driven solutions that scale from cloud architecture to intelligent systems. I thrive at the intersection of machine learning, software engineering, and business impact, translating complexity into innovation that matters."
+        Obsessed with solving problems using data, I engineer AI-driven solutions that scale from cloud architecture to intelligent systems. I thrive at the intersection of machine learning, software engineering, and business impact, translating complexity into innovation that matters.
       </p>          
       <div class="cta-buttons">
         <a href="#projects" class="btn">View Projects</a>
-        <a href="resume/Achyut_Resume.pdf" download class="btn outline" data-sa-event="Resume Download">
+        <a href="resume/Achyut_Kulkarni_Resume.pdf" download class="btn outline" data-sa-event="Resume Download">
           Resume
         </a>        
       </div>              
@@ -125,10 +125,10 @@
       <div class="skill-category-block">
         <h3 class="skill-category-title">Languages</h3>
         <div class="skills-grid">
-          <div class="skill-card"><img src="icons/languages/C.png" alt="C"><p>C</p></div>
           <div class="skill-card"><img src="icons/languages/C++.svg" alt="C++"><p>C++</p></div>
           <div class="skill-card"><img src="icons/languages/Java.svg" alt="Java"><p>Java</p></div>
           <div class="skill-card"><img src="icons/languages/Python.svg" alt="Python"><p>Python</p></div>
+          <div class="skill-card"><img src="icons/languages/R_logo.svg.png" alt="R"><p>R</p></div>
         </div>
       </div>
 
@@ -166,7 +166,7 @@
           <div class="skill-card"><img src="icons/visualization & tools/JMP.png" alt="JMP"><p>JMP</p></div>
           <div class="skill-card"><img src="icons/visualization & tools/OpenVINO.png" alt="OpenVINO"><p>OpenVINO</p></div>
           <div class="skill-card"><img src="icons/visualization & tools/Power BI.png" alt="Power BI"><p>Power BI</p></div>
-          <div class="skill-card"><img src="icons/visualization & tools/Tableau.svg" alt="Power BI"><p>Power BI</p></div>
+          <div class="skill-card"><img src="icons/visualization & tools/Tableau.svg" alt="Tableau"><p>Power BI</p></div>
         </div>
       </div>
 
@@ -190,15 +190,9 @@
         <div class="timeline-content">
           <span class="timeline-date">Aug 2020 – Mar 2023</span>
           <h3>Data Scientist</h3>
-          <h4>Megh Computing</h4>
-          <ul>
-            <li>Developed real-time object detection models using YOLOv5 and Faster R-CNN, improving detection accuracy by 25%.</li>
-            <li>Optimized AI inference pipelines for edge devices using FPGAs and GPUs, cutting latency by 40% and boosting throughput by 60%.</li>
-            <li>Architected cloud-to-edge pipelines with Docker, Kubernetes, AWS, and GCP, reducing bandwidth usage by 40%.</li>
-            <li>Led VAS SDK development, integrating AI with partner platforms and reducing integration time by 35%.</li>
-            <li>Automated benchmarking workflows, halving deployment verification cycles and improving CI/CD reliability.</li>
-            <li>Collaborated cross-functionally to deploy scalable AI solutions in smart city and retail sectors.</li>
-          </ul>
+          <p class="summary-paragraph">
+            At Megh Computing, I built and optimized AI powered security and video analytics systems deployed across edge and cloud infrastructure. My work spanned from model acceleration using TensorRT and OpenVINO to designing custom SDKs that streamlined client integration. I deployed scalable AI pipelines across AWS, GCP, and FPGAs, boosting inference efficiency and precision for real-time anomaly detection. I also led cross functional deployments, mentored new hires, and automated benchmarking workflows delivering enterprise grade solutions for smart cities, retail, and finance sectors.
+          </p>
         </div>
       </div>
 
@@ -212,13 +206,9 @@
         <div class="timeline-content">
           <span class="timeline-date">Jan 2019 – Feb 2019</span>
           <h3>NLP Intern</h3>
-          <h4>ThoughtClan Technologies</h4>
-          <ul>
-            <li>Built and fine-tuned intent detection models using TensorFlow for chatbots in healthcare and finance.</li>
-            <li>Created NLP preprocessing pipelines with NLTK and spaCy to clean user queries.</li>
-            <li>Worked with product and UX teams to improve conversational flows and engagement.</li>
-            <li>Enhanced real-time NLP systems for parsing feedback and accelerating service resolution.</li>
-          </ul>
+          <p class="summary-paragraph">
+            As an NLP intern at ThoughtClan, I contributed to the development of a conversational AI system, enhancing natural language understanding for a virtual assistant. I worked on training intent recognition models using TensorFlow and built preprocessing pipelines that improved real-time response accuracy. This early exposure to applied NLP set the foundation for my continued work in language-driven AI projects.
+          </p>
         </div>
       </div>
 
@@ -270,7 +260,6 @@
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
       <h3 id="modalTitle"></h3>
-      <p id="modalTech" style="font-weight: bold;"></p>
       <p id="modalDescriptionList"></p>
       <p id="modalImpact"></p>
       <a id="modalLink" href="#" target="_blank">View</a>
@@ -294,43 +283,37 @@
   const projects = [
   {
     "title": "Autonomous Vehicle Safety (XAI)",
-    "tech": "Python, OpenCV, TensorFlow, XAI",
-    "description": "Developed an explainable AI system integrating CRAFT and TCAV methods to enhance image classification in autonomous vehicles. This approach improved human detection accuracy and minimized unnecessary braking, contributing to safer and more reliable autonomous navigation.",
-    "impact": "Enhanced human detection and reduced false-positive braking events, leading to improved passenger safety and ride comfort.",
+    "description": "As autonomous systems grow in complexity, ensuring transparency in their decision making becomes critical. This project tackled the black box nature of image classification and object detection in self driving cars by applying explainable AI techniques — CRAFT and TCAV. I built a custom pipeline that visualized what parts of an image influenced the model’s decision, helping to expose and reduce false positive detections (e.g., pedestrians when none were present). This directly addressed trust and safety concerns in AV systems. The result: better interpretability, more reliable human detection, and fewer unnecessary braking incidents, laying the groundwork for more transparent and trustworthy AI on the road.",
+    "impact": "Enhanced human detection and reduced false positive braking events, leading to improved passenger safety and ride comfort.",
     "url": null
   },
   {
     "title": "Skin Cancer Detection",
-    "tech": "Python, MobileNet, TensorFlow",
-    "description": "Engineered a lightweight convolutional neural network using MobileNet architecture to detect melanoma with an accuracy of 82%. This tool aids clinicians in early diagnosis, facilitating timely treatment decisions and improving patient outcomes.",
-    "impact": "Provided a reliable diagnostic aid for early melanoma detection, supporting clinical decision-making and potentially saving lives.",
+    "description": "Early detection is key in treating melanoma, and I wanted to explore how deep learning could help scale diagnostic support. I developed a lightweight convolutional neural network using MobileNet, trained on a labeled dermatology image dataset. The model achieved 82% accuracy, striking a balance between performance and deployability, especially for mobile or resource constrained environments. By focusing on a portable architecture, the goal was to support assistive diagnostic tools that can function in real time for remote clinics or telemedicine applications   making AI accessible and actionable in healthcare.",
+    "impact": "Provided a reliable diagnostic aid for early melanoma detection, supporting clinical decision making and potentially saving lives.",
     "url": "https://www.ijltet.org/pdfviewer.php?id=961&j_id=4929"
   },
   {
     "title": "Online Sales Analysis",
-    "tech": "Python, Pandas, SciPy",
-    "description": "Conducted comprehensive statistical analyses, including regression, ANOVA, and chi-square tests, on e-commerce sales data to uncover key business insights. The findings informed strategic decisions that led to optimized sales strategies and revenue growth.",
+    "description": "This project was driven by the question: What factors actually drive online sales? Using a real world e commerce dataset, I conducted exploratory data analysis followed by regression modeling, ANOVA, and chi square tests to find statistically significant relationships between variables like time, region, and product category. I visualized trends and outliers to uncover where marketing campaigns had the most lift. The analysis led to actionable business insights, such as optimal timing for promotions and identifying product categories with inconsistent performance. The project demonstrated how statistical rigor can be a powerful decision making tool in commercial strategy.",
     "impact": "Delivered actionable insights that improved sales strategies, contributing to increased revenue and market competitiveness.",
     "url": "https://github.com/AchyutKulkarni/CustomerDataAnalysis"
   },
   {
     "title": "Job Posting Classifier",
-    "tech": "Python, NLP, Scikit-learn",
-    "description": "Developed a natural language processing classifier capable of detecting fraudulent job postings with 75% accuracy. This tool enhances user safety by identifying and filtering deceptive listings on job platforms.",
+    "description": "Online job platforms are often exploited by scammers   and I wanted to explore how NLP could help address this. I built a classification model to detect fraudulent job postings, starting with text preprocessing, TF-IDF vectorization, and feature selection on a labeled dataset. I experimented with logistic regression and ensemble methods, achieving 75% accuracy. The goal was to flag suspicious listings using linguistic cues (e.g., urgency, benefits overload, poor formatting). This model offers a scalable way to protect job seekers from exploitation, while helping platforms maintain trust and safety at scale.",
     "impact": "Improved user trust and safety by effectively identifying and mitigating exposure to fraudulent job postings.",
     "url": "https://github.com/AchyutKulkarni/FakeJobPosting"
   },
   {
     "title": "Auto Code Generation",
-    "tech": "Python, LangChain, LLMs",
-    "description": "Created an AI-powered tool that translates natural language prompts into executable Python code using large language models and LangChain. This innovation streamlines development workflows and accelerates coding processes.",
+    "description": "This project explores the future of developer productivity by using large language models to convert plain language prompts into executable Python code. I built an interactive Streamlit app that leverages LangChain and GPT based models to generate, explain, and display code for a wide range of tasks   from data scraping to ML pipelines. With careful prompt engineering and contextual chaining, the tool ensures accurate and relevant code suggestions, reducing time spent on repetitive boilerplate. AutoCodeGen demonstrates how AI can augment coding workflows and accelerate rapid prototyping for data scientists and engineers.",
     "impact": "Enhanced development efficiency by enabling rapid code generation from natural language, reducing manual coding efforts.",
     "url": "https://github.com/AchyutKulkarni/AutoCodeGen"
   },
   {
     "title": "Marketing Strategy Optimization",
-    "tech": "ArcGIS, Python, StoryMap",
-    "description": "Utilized geospatial analysis tools, including ArcGIS and StoryMaps, to visualize customer engagement data. This approach provided insights that refined marketing strategies and targeted campaigns more effectively.",
+    "description": "Marketing data often lacks spatial context   and this project aimed to fix that. I took raw campaign and customer engagement data and visualized it using ArcGIS StoryMaps, creating an interactive dashboard that mapped performance metrics across different regions. The goal was to identify geospatial trends in customer behavior, such as high response zones or underperforming areas. By layering in external data like demographics and location types, I provided deeper context to marketers for more targeted outreach strategies. The visual format made the findings more accessible to non technical stakeholders, improving alignment between data and decision makers.",
     "impact": "Improved campaign effectiveness by leveraging geospatial insights to tailor marketing strategies to specific customer demographics.",
     "url": "https://storymaps.arcgis.com/stories/edc86425dff2487db303583815694147"
   }
@@ -339,7 +322,6 @@
   function openModal(index) {
     const project = projects[index];
     document.getElementById('modalTitle').textContent = project.title;
-    document.getElementById('modalTech').textContent = `Tech Used: ${project.tech}`;
     document.getElementById('modalDescriptionList').textContent = project.description;
     document.getElementById('modalImpact').textContent = project.impact;
 
