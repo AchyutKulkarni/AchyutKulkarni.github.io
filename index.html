@@ -17,6 +17,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
         </ul>
       </nav>      
   </div>
@@ -255,16 +256,63 @@
 
     </div>
   </div>
+</section>
 
-  <!-- Modal -->
-  <div id="projectModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <h3 id="modalTitle"></h3>
-      <p id="modalDescriptionList"></p>
-      <p id="modalImpact"></p>
-      <a id="modalLink" href="#" target="_blank">View</a>
+<!-- Modal -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <h4>Overview</h4>
+    <p id="modalOverview"></p>
+    <h4>Technical Details</h4>
+    <p id="modalDetails"></p>
+    <h4>Impact</h4>
+    <p id="modalImpact"></p>
+    <div id="modalLogos" class="collaborator-logos"></div>
+    <a id="modalLink" href="#" target="_blank">View</a>
+  </div>  
+</div>
+
+<!-- ACHIEVEMENTS SECTION -->
+<section id="achievements" class="section">
+  <div class="container">
+    <h2 class="section-title">Achievements</h2>
+
+    <div class="achievement-card">
+      <h3>🏆 RIT Business Analytics Competition — Winner (Team Leader)</h3>
+      <p>
+        As team lead of <strong>SmartAnalytix</strong>, I led our winning strategy in the SCB Business Analytics Competition 2025. We evaluated AI platforms—GPT-4, Claude 3, and Mistral—across performance, cost, privacy, and usability to recommend the best fit for RIT.
+      </p>
+      <ul>
+        <li>Built a scoring system evaluating LLMs on fairness, compliance, and ROI.</li>
+        <li>Benchmarked Claude 3 and GPT-4 on MMLU, TruthfulQA, and ARC datasets.</li>
+        <li>Recommended Claude 3 with a clear roadmap for campus-wide deployment.</li>
+      </ul>
+      <p><strong>Impact:</strong> Our holistic strategy won top honors and was recognized for ethical and technical excellence.</p>
+      <div class="achievement-buttons">
+        <a href="https://www.rit.edu/business/business-analytics-competition" class="btn" target="_blank">View Details</a>
+        <a href="projects/SCB.pdf" class="btn outline" download target="_blank">See Presentation (PDF)</a>
+      </div>
     </div>
+
+    <div class="achievement-card">
+      <h3>📄 Research Publication — Skin Cancer Detection using MobileNet</h3>
+      <p>
+        Published my research on deep learning-based melanoma detection using MobileNet in the International Journal of Latest Trends in Engineering and Technology (IJLTET). The project demonstrates how lightweight CNNs can support early diagnosis using dermoscopic images.
+      </p>
+      <ul>
+        <li>Achieved 82% classification accuracy on publicly available datasets.</li>
+        <li>Applied data augmentation and transfer learning to address data scarcity.</li>
+        <li>Explored real-world applications in clinical decision-making tools.</li>
+      </ul>
+      <p><strong>Impact:</strong> Provides scalable solutions for affordable early cancer screening tools, aiding healthcare access in resource-constrained regions.</p>
+      <div class="achievement-buttons">
+        <a href="#projects" class="btn">View Project</a>
+        <a href="https://www.ijltet.org/pdfviewer.php?id=961&j_id=4929" class="btn outline" target="_blank">Read Paper</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -282,49 +330,68 @@
 <!-- PROJECTS DATA + SCRIPT -->
 <script>
   const projects = [
-  {
-    "title": "Autonomous Vehicle Safety (XAI)",
-    "description": "As autonomous systems grow in complexity, ensuring transparency in their decision making becomes critical. This project tackled the black box nature of image classification and object detection in self driving cars by applying explainable AI techniques — CRAFT and TCAV. I built a custom pipeline that visualized what parts of an image influenced the model’s decision, helping to expose and reduce false positive detections (e.g., pedestrians when none were present). This directly addressed trust and safety concerns in AV systems. The result: better interpretability, more reliable human detection, and fewer unnecessary braking incidents, laying the groundwork for more transparent and trustworthy AI on the road.",
-    "impact": "Enhanced human detection and reduced false positive braking events, leading to improved passenger safety and ride comfort.",
-    "url": null
-  },
-  {
-    "title": "Skin Cancer Detection",
-    "description": "Early detection is key in treating melanoma, and I wanted to explore how deep learning could help scale diagnostic support. I developed a lightweight convolutional neural network using MobileNet, trained on a labeled dermatology image dataset. The model achieved 82% accuracy, striking a balance between performance and deployability, especially for mobile or resource constrained environments. By focusing on a portable architecture, the goal was to support assistive diagnostic tools that can function in real time for remote clinics or telemedicine applications   making AI accessible and actionable in healthcare.",
-    "impact": "Provided a reliable diagnostic aid for early melanoma detection, supporting clinical decision making and potentially saving lives.",
-    "url": "https://www.ijltet.org/pdfviewer.php?id=961&j_id=4929"
-  },
-  {
-    "title": "Online Sales Analysis",
-    "description": "This project was driven by the question: What factors actually drive online sales? Using a real world e commerce dataset, I conducted exploratory data analysis followed by regression modeling, ANOVA, and chi square tests to find statistically significant relationships between variables like time, region, and product category. I visualized trends and outliers to uncover where marketing campaigns had the most lift. The analysis led to actionable business insights, such as optimal timing for promotions and identifying product categories with inconsistent performance. The project demonstrated how statistical rigor can be a powerful decision making tool in commercial strategy.",
-    "impact": "Delivered actionable insights that improved sales strategies, contributing to increased revenue and market competitiveness.",
-    "url": "https://github.com/AchyutKulkarni/CustomerDataAnalysis"
-  },
-  {
-    "title": "Job Posting Classifier",
-    "description": "Online job platforms are often exploited by scammers   and I wanted to explore how NLP could help address this. I built a classification model to detect fraudulent job postings, starting with text preprocessing, TF-IDF vectorization, and feature selection on a labeled dataset. I experimented with logistic regression and ensemble methods, achieving 75% accuracy. The goal was to flag suspicious listings using linguistic cues (e.g., urgency, benefits overload, poor formatting). This model offers a scalable way to protect job seekers from exploitation, while helping platforms maintain trust and safety at scale.",
-    "impact": "Improved user trust and safety by effectively identifying and mitigating exposure to fraudulent job postings.",
-    "url": "https://github.com/AchyutKulkarni/FakeJobPosting"
-  },
-  {
-    "title": "Auto Code Generation",
-    "description": "This project explores the future of developer productivity by using large language models to convert plain language prompts into executable Python code. I built an interactive Streamlit app that leverages LangChain and GPT based models to generate, explain, and display code for a wide range of tasks   from data scraping to ML pipelines. With careful prompt engineering and contextual chaining, the tool ensures accurate and relevant code suggestions, reducing time spent on repetitive boilerplate. AutoCodeGen demonstrates how AI can augment coding workflows and accelerate rapid prototyping for data scientists and engineers.",
-    "impact": "Enhanced development efficiency by enabling rapid code generation from natural language, reducing manual coding efforts.",
-    "url": "https://github.com/AchyutKulkarni/AutoCodeGen"
-  },
-  {
-    "title": "Marketing Strategy Optimization",
-    "description": "Marketing data often lacks spatial context   and this project aimed to fix that. I took raw campaign and customer engagement data and visualized it using ArcGIS StoryMaps, creating an interactive dashboard that mapped performance metrics across different regions. The goal was to identify geospatial trends in customer behavior, such as high response zones or underperforming areas. By layering in external data like demographics and location types, I provided deeper context to marketers for more targeted outreach strategies. The visual format made the findings more accessible to non technical stakeholders, improving alignment between data and decision makers.",
-    "impact": "Improved campaign effectiveness by leveraging geospatial insights to tailor marketing strategies to specific customer demographics.",
-    "url": "https://storymaps.arcgis.com/stories/edc86425dff2487db303583815694147"
-  }
+    {
+      title: "Autonomous Vehicle Safety (XAI)",
+      overview: "Exploring the black box of AI decision-making in autonomous vehicles to enhance interpretability and safety.",
+      details: "Implemented explainable AI techniques like CRAFT and TCAV on object detection models to visualize which image regions influenced decisions. Used PyTorch and custom Grad-CAM logic to flag false pedestrian detections, reducing unnecessary braking incidents.",
+      impact: "Improved model transparency and reduced false positives, enhancing both trust and operational reliability in AV systems.",
+      url: null,
+      logos: ["logos/TRI.png", "logos/UCI.png", "logos/UFL.png"]
+    },
+    {
+      title: "Skin Cancer Detection",
+      overview: "Designed an AI-based diagnostic tool for early melanoma detection using deep learning.",
+      details: "Built a MobileNet model with transfer learning and data augmentation to classify dermoscopic images. Achieved 82% accuracy, optimized for mobile deployment in low-resource clinics.",
+      impact: "Enabled scalable, real-time screening for early cancer detection, aiding access to healthcare in remote regions.",
+      url: "https://www.ijltet.org/pdfviewer.php?id=961&j_id=4929"
+    },
+    {
+      title: "Online Sales Analysis",
+      overview: "Identified trends and insights from e-commerce data to guide strategic marketing decisions.",
+      details: "Performed EDA, regression modeling, and hypothesis testing on sales data. Created visual dashboards to highlight trends by region, time, and product category. Tools used: Python, pandas, Seaborn, ANOVA.",
+      impact: "Helped optimize promotion timing and product targeting, improving overall sales effectiveness.",
+      url: "https://github.com/AchyutKulkarni/CustomerDataAnalysis"
+    },
+    {
+      title: "Job Posting Classifier",
+      overview: "Developed a fraud detection system to protect users from fake job listings.",
+      details: "Processed textual job post data using TF-IDF and trained classification models including logistic regression and Random Forest. Identified red flags like exaggerated perks, urgency language, and missing credentials.",
+      impact: "Enhanced job seeker safety by flagging fraudulent listings and improving platform credibility.",
+      url: "https://github.com/AchyutKulkarni/FakeJobPosting"
+    },
+    {
+      title: "Auto Code Generation",
+      overview: "Enabled natural language-driven Python code generation for rapid prototyping and learning.",
+      details: "Built a Streamlit app that integrates GPT-based models and LangChain to convert plain language prompts into code. Supports tasks like plotting, data processing, and ML pipelines with live explanations.",
+      impact: "Boosted developer productivity and made coding accessible to non-technical users.",
+      url: "https://github.com/AchyutKulkarni/AutoCodeGen"
+    },
+    {
+      title: "Marketing Strategy Optimization",
+      overview: "Mapped marketing campaign results to geography to uncover high-performing zones.",
+      details: "Used ArcGIS StoryMaps to visualize customer response data with location overlays. Integrated external demographic data for deeper insights and created interactive dashboards for stakeholders.",
+      impact: "Informed region-specific outreach strategies, leading to better ROI on campaigns.",
+      url: "https://storymaps.arcgis.com/stories/edc86425dff2487db303583815694147"
+    }
   ];
 
   function openModal(index) {
     const project = projects[index];
     document.getElementById('modalTitle').textContent = project.title;
-    document.getElementById('modalDescriptionList').textContent = project.description;
+    document.getElementById('modalOverview').textContent = project.overview;
+    document.getElementById('modalDetails').textContent = project.details;
     document.getElementById('modalImpact').textContent = project.impact;
+    const logosContainer = document.getElementById('modalLogos');
+    logosContainer.innerHTML = '';
+    if (project.logos && project.logos.length > 0) {
+      project.logos.forEach(src => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = "Collaborator Logo";
+        img.classList.add('collaborator-logo');
+        logosContainer.appendChild(img);
+      });
+    }
 
     const link = document.getElementById('modalLink');
     if (project.url) {
@@ -341,20 +408,11 @@
     document.getElementById("projectModal").style.display = "none";
   }
 </script>
-<script>
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-</script>
+
 
 <!-- 100% privacy-first analytics -->
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<script async src="https://scripts.simpleanalyticscdn.com/auto-events.js"></script>
 
 </body>
 </html>

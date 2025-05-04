@@ -1,4 +1,7 @@
 /* Reset & Base */
+  html {
+  scroll-behavior: smooth;
+  }
 * {
     margin: 0;
     padding: 0;
@@ -426,12 +429,16 @@
     margin-bottom: 0.5rem;
   }
   .company-logo-wrapper {
-    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 120px;
     height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem auto;
   }
   .company-logo-wrapper img.company-logo {
     width: 100px;
@@ -528,15 +535,16 @@
   }
   
   .modal-content {
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: #ffffff;
     margin: 5% auto;
     padding: 20px;
     width: 90%;
     max-width: 600px;
-    color: white;
+    color: #111;
     border-radius: 12px;
     text-align: justify;
     position: relative;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
   }
   
   .modal-content img {
@@ -561,9 +569,20 @@
     text-decoration: none;
     z-index: 10000;
   }
+
+  .collaborator-logo {
+    max-width: 100px;
+    max-height: 60px;
+    object-fit: contain;
+    background: white;
+    padding: 6px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin: 0 6px;
+  }
   
   .close {
-    color: white;
+    color: #00bfff;
     position: absolute;
     top: 10px; right: 20px;
     font-size: 28px;
@@ -575,6 +594,28 @@
     z-index: 10001;
   }
   
+  .achievement-card {
+    background: rgba(255, 255, 255, 0.95);
+    color: #111;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+  .achievement-card h3 {
+    color: #003366;
+    margin-bottom: 0.8rem;
+  }
+  .achievement-card ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .achievement-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+  }
   
   /* Responsive */
   @media screen and (max-width: 768px) {
