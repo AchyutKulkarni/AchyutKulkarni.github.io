@@ -2,417 +2,678 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Achyut Sridhar Kulkarni | Portfolio</title>
+  <link rel="icon" type="image/png" href="images/ak_icon.png">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="images/ak_icon.png" style="border-radius: 50%;">
 </head>
 <body>
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="container">
-    <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#achievements">Achievements</a></li>
-        </ul>
-      </nav>      
-  </div>
-</header>
-
-<!-- HERO + ABOUT SECTION -->
-<section class="hero-video-section" id="about">
-  <video autoplay muted loop playsinline id="bg-video">
-    <source src="videos/background_v2.mp4" type="video/mp4">
-  </video>      
-  <div class="hero-overlay">
-    <div class="hero-main">
-      <img src="images/achyut.png" alt="Achyut's Photo" class="hero-avatar" />
-      <h2>Hi, I'm <span class="highlight">Achyut</span></h2>
-      <p class="tagline">Data Scientist | AI Engineer | Tech Explorer</p>
-      <p class="about-paragraph">
-        Obsessed with solving problems using data, I engineer AI-driven solutions that scale from cloud architecture to intelligent systems. I thrive at the intersection of machine learning, software engineering, and business impact, translating complexity into innovation that matters.
-      </p>          
-      <div class="cta-buttons">
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="resume/Achyut_Kulkarni_Resume.pdf" class="btn outline" download target="_blank">
-          Resume
-        </a>        
-      </div>              
-      <div class="hero-icons">
-        <a href="mailto:ak6416@rit.edu">
-          <img src="images/gmail.svg" alt="Gmail" />
-        </a>                      
-        <a href="https://linkedin.com/in/achyutsk" target="_blank">
-          <img src="images/linkedin.svg" alt="LinkedIn" />
-        </a>
-        <a href="https://github.com/AchyutKulkarni" target="_blank">
-          <img src="images/github.svg" alt="GitHub" />
-        </a>
-      </div>          
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/achyut.png" alt="Achyut Sridhar Kulkarni" class="brand-avatar">
+        <div>
+          <p class="brand-label">Achyut Sridhar Kulkarni</p>
+          <span class="brand-role">Data Scientist &amp; AI Engineer</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="resume/Achyut_Kulkarni_Resume.pdf" target="_blank" class="resume-pill">Download Resume</a>
     </div>
+  </header>
 
-    <div class="hero-contact-form">
-      <h3>If you'd like to connect, feel free to reach out:</h3>
-      <form action="https://formspree.io/f/xwplyrzw" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION SECTION -->
-<section id="education" class="section">
-  <div class="container">
-    <h2 class="section-title">Education</h2>
-    <div class="card-grid">
-      <a href="https://www.rit.edu/study/data-science-ms" class="card" target="_blank">
-        <div class="edu-card">
-          <img src="logos/RochesterInstituteofTechnology.jpg" alt="RIT" class="edu-logo">
-          <div class="edu-content">
-            <h3 class="edu-degree">MS in Data Science</h3>
-            <p class="edu-school"><strong>Rochester Institute of Technology</strong></p>
-            <p class="timeline-date">2023 – 2025</p>
+  <main>
+    <section id="about" class="hero">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">AI venture builder · founding engineer · product storyteller</p>
+          <h1>Transforming messy data and V1 ideas into production grade AI products.</h1>
+          <p class="lead">
+            My builds ship with proof baked in: at Jorts App I scaled social graph intelligence to 120K waitlist users while lifting recommendation accuracy 28% and cutting churn 15%; at Megh Computing I reduced edge inference latency 40% and stood up audit-friendly SDKs that enterprise CISOs sign off on. Every engagement blends architecture, go-to-market narrative, and governance so executives see ROI the moment we hit “deploy.”
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View Case Studies</a>
+            <a href="https://linkedin.com/in/achyutsk" target="_blank" class="btn ghost">Connect on LinkedIn</a>
           </div>
         </div>
-      </a>
-      <a href="https://www.bnmit.org/information-science-engineering/" class="card" target="_blank">
-        <div class="edu-card">
-          <img src="logos/BNMInstituteofTechnology.jpg" alt="BNMIT" class="edu-logo">
-          <div class="edu-content">
-            <h3 class="edu-degree">BE in Information Science</h3>
-            <p class="edu-school"><strong>BNMIT</strong></p>
-            <p class="timeline-date">2016 – 2020</p>
+        <div class="hero-panel">
+          <div class="panel-card">
+            <p class="panel-label">Recent focus</p>
+            <h3>Founding Engineer · Jorts App</h3>
+            <ul>
+              <li>Owning the platform roadmap end to end, spanning vector search recommendations, monetization analytics, and LLM copilots, so investors can demo new revenue paths every sprint.</li>
+              <li>Partnered with RIT leadership to craft SmartAnalytix governance scorecards that now shape every generative AI investment the university funds.</li>
+            </ul>
+          </div>
+          <div class="panel-card">
+            <p class="panel-label">Ways to reach me</p>
+            <div class="contact-icons-row">
+              <a href="mailto:ak6416@rit.edu" class="icon-link" aria-label="Email Achyut Sridhar Kulkarni">
+                <img src="images/gmail.svg" alt="Email icon">
+              </a>
+              <a href="https://github.com/AchyutKulkarni" target="_blank" rel="noopener" class="icon-link" aria-label="Achyut Kulkarni on GitHub">
+                <img src="images/github.svg" alt="GitHub icon">
+              </a>
+              <a href="https://linkedin.com/in/achyutsk" target="_blank" rel="noopener" class="icon-link" aria-label="Achyut Kulkarni on LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn icon">
+              </a>
+            </div>
           </div>
         </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS SECTION -->
-<section id="skills" class="section">
-  <div class="container">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-wrapper">
-
-      <!-- Cloud & Database -->
-      <div class="skill-category-block">
-        <h3 class="skill-category-title">Cloud & Database</h3>
-        <div class="skills-grid">
-          <div class="skill-card"><img src="icons/cloud & database/AWS.svg" alt="AWS"><p>AWS</p></div>
-          <div class="skill-card"><img src="icons/cloud & database/Azure.svg" alt="Azure"><p>Azure</p></div>
-          <div class="skill-card"><img src="icons/cloud & database/docker.svg" alt="Docker"><p>Docker</p></div>
-          <div class="skill-card"><img src="icons/cloud & database/GCP.svg" alt="GCP"><p>GCP</p></div>
-          <div class="skill-card"><img src="icons/cloud & database/git.svg" alt="Git"><p>Git</p></div>
-          <div class="skill-card"><img src="icons/cloud & database/mongoDB.svg" alt="MongoDB"><p>MongoDB</p></div>
-          <div class="skill-card"><img src="icons/cloud & database/MySQL.svg" alt="MySQL"><p>MySQL</p></div>
-          <div class="skill-card"><img src="icons/cloud & database/Redis.png" alt="Redis"><p>Redis</p></div>
-        </div>
       </div>
+    </section>
 
-      <!-- Languages -->
-      <div class="skill-category-block">
-        <h3 class="skill-category-title">Languages</h3>
-        <div class="skills-grid">
-          <div class="skill-card"><img src="icons/languages/C++.svg" alt="C++"><p>C++</p></div>
-          <div class="skill-card"><img src="icons/languages/Java.svg" alt="Java"><p>Java</p></div>
-          <div class="skill-card"><img src="icons/languages/Python.svg" alt="Python"><p>Python</p></div>
-          <div class="skill-card"><img src="icons/languages/R_logo.svg.png" alt="R"><p>R</p></div>
-        </div>
-      </div>
-
-      <!-- Libraries -->
-      <div class="skill-category-block">
-        <h3 class="skill-category-title">Libraries</h3>
-        <div class="skills-grid">
-          <div class="skill-card"><img src="icons/libraries/Hugging Face.svg" alt="Hugging Face"><p>Hugging Face</p></div>
-          <div class="skill-card"><img src="icons/libraries/Keras.png" alt="Keras"><p>Keras</p></div>
-          <div class="skill-card"><img src="icons/libraries/LangChain.png" alt="LangChain"><p>LangChain</p></div>
-          <div class="skill-card"><img src="icons/libraries/matplotlib.webp" alt="matplotlib"><p>matplotlib</p></div>
-          <div class="skill-card"><img src="icons/libraries/NLTK.png" alt="NLTK"><p>NLTK</p></div>
-          <div class="skill-card"><img src="icons/libraries/NumPy.png" alt="NumPy"><p>NumPy</p></div>
-          <div class="skill-card"><img src="icons/libraries/OpenCV.png" alt="OpenCV"><p>OpenCV</p></div>
-          <div class="skill-card"><img src="icons/libraries/pandas.png" alt="pandas"><p>pandas</p></div>
-          <div class="skill-card"><img src="icons/libraries/PyTorch.webp" alt="PyTorch"><p>PyTorch</p></div>
-          <div class="skill-card"><img src="icons/libraries/Scikit learn.svg" alt="Scikit-learn"><p>Scikit-learn</p></div>
-          <div class="skill-card"><img src="icons/libraries/SciPy.webp" alt="SciPy"><p>SciPy</p></div>
-          <div class="skill-card"><img src="icons/libraries/Seaborn.svg" alt="Seaborn"><p>Seaborn</p></div>
-          <div class="skill-card"><img src="icons/libraries/spaCy.png" alt="spaCy"><p>spaCy</p></div>
-          <div class="skill-card"><img src="icons/libraries/TensorFlow.png" alt="TensorFlow"><p>TensorFlow</p></div>
-          <div class="skill-card"><img src="icons/libraries/TensorRT.png" alt="TensorRT"><p>TensorRT</p></div>
-          <div class="skill-card"><img src="icons/libraries/ultralytics.svg" alt="ultralytics"><p>ultralytics</p></div>
-        </div>
-      </div>
-
-      <!-- Visualization & Tools -->
-      <div class="skill-category-block">
-        <h3 class="skill-category-title">Visualization & Tools</h3>
-        <div class="skills-grid">
-          <div class="skill-card"><img src="icons/visualization & tools/ArcGIS Pro.png" alt="ArcGIS Pro"><p>ArcGIS Pro</p></div>
-          <div class="skill-card"><img src="icons/visualization & tools/ArcGIS StoryMaps.png" alt="ArcGIS StoryMaps"><p>ArcGIS StoryMaps</p></div>
-          <div class="skill-card"><img src="icons/visualization & tools/django.png" alt="Django"><p>Django</p></div>
-          <div class="skill-card"><img src="icons/visualization & tools/Hadoop.svg" alt="Hadoop"><p>Hadoop</p></div>
-          <div class="skill-card"><img src="icons/visualization & tools/JMP.png" alt="JMP"><p>JMP</p></div>
-          <div class="skill-card"><img src="icons/visualization & tools/OpenVINO.png" alt="OpenVINO"><p>OpenVINO</p></div>
-          <div class="skill-card"><img src="icons/visualization & tools/Power BI.png" alt="Power BI"><p>Power BI</p></div>
-          <div class="skill-card"><img src="icons/visualization & tools/Tableau.svg" alt="Tableau"><p>Tableau</p></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE SECTION -->
-<section id="experience" class="section experience-section">
-  <div class="container">
-    <h2 class="section-title">Professional Experience</h2>
-    <div class="timeline">
-
-      <!-- Megh Computing -->
-      <div class="timeline-item left">
-        <div class="company-logo-wrapper">
-          <a href="https://www.megh.com" target="_blank" rel="noopener noreferrer">
-            <img src="logos/MeghComputing.png" alt="Megh Computing" class="company-logo">
+    <section class="credibility">
+      <div class="container credibility-inner">
+        <p>Trusted by teams at</p>
+        <div class="logo-row">
+          <a href="https://www.megh.com/" target="_blank" rel="noopener" class="icon-link" aria-label="Megh Computing" title="Megh Computing · Led edge AI analytics platform, -40% inference latency">
+            <img src="logos/MeghComputing.png" alt="Megh Computing">
+          </a>
+          <a href="https://www.thoughtclan.com/" target="_blank" rel="noopener" class="icon-link" aria-label="ThoughtClan Technologies" title="ThoughtClan · Built NLP intent prototypes adopted by CX orgs">
+            <img src="logos/ThoughtClanTechnologies.png" alt="ThoughtClan Technologies">
+          </a>
+          <a href="https://www.rit.edu/" target="_blank" rel="noopener" class="icon-link" aria-label="Rochester Institute of Technology" title="RIT · SmartAnalytix governance playbooks guiding campus AI investments">
+            <img src="logos/RochesterInstituteofTechnology.jpg" alt="RIT">
+          </a>
+          <a href="https://www.bnmit.org/" target="_blank" rel="noopener" class="icon-link" aria-label="BNM Institute of Technology" title="BNMIT · Built cloud/dataplane foundations for analytics capstones">
+            <img src="logos/BNMInstituteofTechnology.jpg" alt="BNMIT">
+          </a>
+          <a href="https://www.tri.global/" target="_blank" rel="noopener" class="icon-link" aria-label="Toyota Research Institute" title="Toyota Research Institute · XAI audits for AV safety playbooks">
+            <img src="logos/TRI.png" alt="Toyota Research Institute">
+          </a>
+          <a href="https://www.ufl.edu/" target="_blank" rel="noopener" class="icon-link" aria-label="University of Florida" title="University of Florida · Geo-analytics pilots informing marketing strategy">
+            <img src="logos/UFL.png" alt="University of Florida">
+          </a>
+          <a href="https://uci.edu/" target="_blank" rel="noopener" class="icon-link" aria-label="University of California Irvine" title="UC Irvine · Research collaborations on interpretable AI systems">
+            <img src="logos/UCI.png" alt="University of California Irvine">
           </a>
         </div>
-        <div class="timeline-content">
-          <span class="timeline-date">Aug 2020 – Mar 2023</span>
-          <h3>Data Scientist</h3>
-          <p class="summary-paragraph">
-            At Megh Computing, I built and optimized AI powered security and video analytics systems deployed across edge and cloud infrastructure. My work spanned from model acceleration using TensorRT and OpenVINO to designing custom SDKs that streamlined client integration. I deployed scalable AI pipelines across AWS, GCP, and FPGAs, boosting inference efficiency and precision for real-time anomaly detection. I also led cross functional deployments, mentored new hires, and automated benchmarking workflows delivering enterprise grade solutions for smart cities, retail, and finance sectors.
+        <p class="credibility-footnote">Active OSS contributor with 15 public repos and 3 gists on GitHub, shipping tooling for analytics, LangChain, and explainable AI.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container section-header">
+        <div>
+          <p class="eyebrow">Academic foundation</p>
+          <h2>Education</h2>
+        </div>
+      </div>
+      <div class="container card-grid education-grid">
+        <article class="edu-card">
+          <div class="edu-meta">
+            <a href="https://www.rit.edu/" target="_blank" rel="noopener" class="icon-link" aria-label="Rochester Institute of Technology">
+              <img src="logos/RochesterInstituteofTechnology.jpg" alt="RIT">
+            </a>
+            <div>
+              <h3>MS in Data Science</h3>
+              <p>Rochester Institute of Technology · 2023 - 2025 · GPA 3.9</p>
+            </div>
+          </div>
+          <p>Concentration includes Applied Data Science I and II, Neural Networks, NLP, Software Engineering for Data Science, and Database Design to support full stack MLOps decisions.</p>
+        </article>
+        <article class="edu-card">
+          <div class="edu-meta">
+            <a href="https://www.bnmit.org/" target="_blank" rel="noopener" class="icon-link" aria-label="BNM Institute of Technology">
+              <img src="logos/BNMInstituteofTechnology.jpg" alt="BNMIT">
+            </a>
+            <div>
+              <h3>BE in Information Science</h3>
+              <p>BNMIT · 2016 - 2020</p>
+            </div>
+          </div>
+          <p>Focused on cloud computing, big data, and algorithm design which underpins the large scale AI deployments I now lead.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Capability map</p>
+            <h2>Systems Blueprint</h2>
+          </div>
+          <p class="section-subtitle">Every engagement starts with clear layers: foundation, intelligence, and delivery.</p>
+        </div>
+        <div class="skills-layout">
+          <div class="skills-column primary">
+            <article class="skill-block">
+              <h3>AI &amp; Libraries</h3>
+              <div class="logo-collection">
+                <div class="logo-item">
+                  <a href="https://pytorch.org/docs/" target="_blank" rel="noopener">
+                    <img src="icons/libraries/PyTorch.webp" alt="PyTorch">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://www.tensorflow.org/" target="_blank" rel="noopener">
+                    <img src="icons/libraries/TensorFlow.png" alt="TensorFlow">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://keras.io/" target="_blank" rel="noopener">
+                    <img src="icons/libraries/Keras.png" alt="Keras">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://developer.nvidia.com/tensorrt" target="_blank" rel="noopener">
+                    <img src="icons/libraries/TensorRT.png" alt="TensorRT">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://huggingface.co/docs" target="_blank" rel="noopener">
+                    <img src="icons/libraries/Hugging Face.svg" alt="Hugging Face">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://python.langchain.com/docs/" target="_blank" rel="noopener">
+                    <img src="icons/libraries/LangChain.png" alt="LangChain">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://numpy.org/doc/" target="_blank" rel="noopener">
+                    <img src="icons/libraries/NumPy.png" alt="NumPy">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://pandas.pydata.org/docs/" target="_blank" rel="noopener">
+                    <img src="icons/libraries/pandas.png" alt="pandas">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://docs.scipy.org/doc/scipy/" target="_blank" rel="noopener">
+                    <img src="icons/libraries/SciPy.webp" alt="SciPy">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://scikit-learn.org/stable/" target="_blank" rel="noopener">
+                    <img src="icons/libraries/Scikit learn.svg" alt="Scikit-learn">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://matplotlib.org/stable/" target="_blank" rel="noopener">
+                    <img src="icons/libraries/matplotlib.webp" alt="Matplotlib">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://seaborn.pydata.org/" target="_blank" rel="noopener">
+                    <img src="icons/libraries/Seaborn.svg" alt="Seaborn">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://docs.opencv.org/" target="_blank" rel="noopener">
+                    <img src="icons/libraries/OpenCV.png" alt="OpenCV">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://spacy.io/usage" target="_blank" rel="noopener">
+                    <img src="icons/libraries/spaCy.png" alt="spaCy">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://www.nltk.org/" target="_blank" rel="noopener">
+                    <img src="icons/libraries/NLTK.png" alt="NLTK">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://docs.ultralytics.com/" target="_blank" rel="noopener">
+                    <img src="icons/libraries/ultralytics.svg" alt="Ultralytics">
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="skill-block">
+              <h3>Languages &amp; Runtime</h3>
+              <div class="logo-collection logo-collection--single-row">
+                <div class="logo-item">
+                  <a href="https://docs.python.org/3/" target="_blank" rel="noopener">
+                    <img src="icons/languages/Python.svg" alt="Python">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://docs.oracle.com/en/java/" target="_blank" rel="noopener">
+                    <img src="icons/languages/Java.svg" alt="Java">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://en.cppreference.com/w/cpp" target="_blank" rel="noopener">
+                    <img src="icons/languages/C++.svg" alt="C++">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://en.cppreference.com/w/c" target="_blank" rel="noopener">
+                    <img src="icons/languages/C.png" alt="C">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://cran.r-project.org/manuals.html" target="_blank" rel="noopener">
+                    <img src="icons/languages/R_logo.svg.png" alt="R">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="skills-column secondary">
+            <article class="skill-block">
+              <h3>Cloud &amp; Infrastructure</h3>
+              <div class="logo-collection">
+                <div class="logo-item">
+                  <a href="https://docs.aws.amazon.com/" target="_blank" rel="noopener">
+                    <img src="icons/cloud &amp; database/AWS.svg" alt="AWS">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://learn.microsoft.com/azure/" target="_blank" rel="noopener">
+                    <img src="icons/cloud &amp; database/Azure.svg" alt="Azure">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://cloud.google.com/docs" target="_blank" rel="noopener">
+                    <img src="icons/cloud &amp; database/GCP.svg" alt="GCP">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://docs.docker.com/" target="_blank" rel="noopener">
+                    <img src="icons/cloud &amp; database/docker.svg" alt="Docker">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://git-scm.com/doc" target="_blank" rel="noopener">
+                    <img src="icons/cloud &amp; database/git.svg" alt="Git">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://www.mongodb.com/docs/" target="_blank" rel="noopener">
+                    <img src="icons/cloud &amp; database/mongoDB.svg" alt="MongoDB">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://dev.mysql.com/doc/" target="_blank" rel="noopener">
+                    <img src="icons/cloud &amp; database/MySQL.svg" alt="MySQL">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://redis.io/docs/" target="_blank" rel="noopener">
+                    <img src="icons/cloud &amp; database/Redis.png" alt="Redis">
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="skill-block">
+              <h3>Visualization &amp; Tools</h3>
+              <div class="logo-collection">
+                <div class="logo-item">
+                  <a href="https://learn.microsoft.com/power-bi/" target="_blank" rel="noopener">
+                    <img src="icons/visualization &amp; tools/Power BI.png" alt="Power BI">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://help.tableau.com/" target="_blank" rel="noopener">
+                    <img src="icons/visualization &amp; tools/Tableau.svg" alt="Tableau">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://pro.arcgis.com/" target="_blank" rel="noopener">
+                    <img src="icons/visualization &amp; tools/ArcGIS Pro.png" alt="ArcGIS Pro">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://doc.arcgis.com/en/arcgis-storymaps/" target="_blank" rel="noopener">
+                    <img src="icons/visualization &amp; tools/ArcGIS StoryMaps.png" alt="ArcGIS StoryMaps">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://docs.djangoproject.com/en/stable/" target="_blank" rel="noopener">
+                    <img src="icons/visualization &amp; tools/django.png" alt="Django">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://hadoop.apache.org/docs/stable/" target="_blank" rel="noopener">
+                    <img src="icons/visualization &amp; tools/Hadoop.svg" alt="Hadoop">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://docs.openvino.ai/" target="_blank" rel="noopener">
+                    <img src="icons/visualization &amp; tools/OpenVINO.png" alt="OpenVINO">
+                  </a>
+                </div>
+                <div class="logo-item">
+                  <a href="https://www.jmp.com/support/help/" target="_blank" rel="noopener">
+                    <img src="icons/visualization &amp; tools/JMP.png" alt="JMP">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container section-header">
+        <div>
+          <p class="eyebrow">Proven delivery</p>
+          <h2>Professional Experience</h2>
+        </div>
+      </div>
+      <div class="container timeline">
+        <article class="timeline-card">
+          <div class="timeline-meta">
+            <a href="https://www.jortsapp.com/" target="_blank" rel="noopener" class="icon-link" aria-label="Jorts App">
+              <img src="logos/Jorts.png" alt="Jorts App">
+            </a>
+            <div>
+              <h3>Founding Engineer · Jorts App</h3>
+              <p>Aug 2025 - Present · Charlotte NC</p>
+            </div>
+          </div>
+          <p>
+            Building the community discovery platform end to end: defined the MongoDB and GCP architecture for messaging and media, tuned caching layers to cut read latency 40%, modeled user graphs in Neo4j that raised recommendation accuracy 28%, and embedded analytics that reduced churn 15% as we prepare for market scale.
           </p>
-        </div>
-      </div>
-
-      <!-- ThoughtClan -->
-      <div class="timeline-item right">
-        <div class="company-logo-wrapper">
-          <a href="https://thoughtclan.com" target="_blank" rel="noopener noreferrer">
-            <img src="logos/ThoughtClanTechnologies.png" alt="ThoughtClan Technologies" class="company-logo">
-          </a>
-        </div>
-        <div class="timeline-content">
-          <span class="timeline-date">Jan 2019 – Feb 2019</span>
-          <h3>NLP Intern</h3>
-          <p class="summary-paragraph">
-            As an NLP intern at ThoughtClan, I contributed to the development of a conversational AI system, enhancing natural language understanding for a virtual assistant. I worked on training intent recognition models using TensorFlow and built preprocessing pipelines that improved real-time response accuracy. This early exposure to applied NLP set the foundation for my continued work in language-driven AI projects.
+        </article>
+        <article class="timeline-card">
+          <div class="timeline-meta">
+            <a href="https://www.megh.com/" target="_blank" rel="noopener" class="icon-link" aria-label="Megh Computing">
+              <img src="logos/MeghComputing.png" alt="Megh Computing">
+            </a>
+            <div>
+              <h3>Data Scientist · Megh Computing</h3>
+              <p>Aug 2020 - Mar 2023 · Bengaluru, India</p>
+            </div>
+          </div>
+          <p>
+            Built AI-powered security and video analytics across edge and cloud infrastructure. Accelerated inference with TensorRT and OpenVINO, designed custom SDKs for customer integrations, deployed AWS/GCP/FPGAs pipelines, and led cross-functional rollouts for smart city, retail, and finance deployments.
           </p>
+        </article>
+        <article class="timeline-card">
+          <div class="timeline-meta">
+            <a href="https://www.thoughtclan.com/" target="_blank" rel="noopener" class="icon-link" aria-label="ThoughtClan Technologies">
+              <img src="logos/ThoughtClanTechnologies.png" alt="ThoughtClan">
+            </a>
+            <div>
+              <h3>NLP Intern · ThoughtClan Technologies</h3>
+              <p>Jan 2019 - Feb 2019 · Bengaluru, India</p>
+            </div>
+          </div>
+          <p>
+            Prototyped conversational AI, improved real-time intent recognition with TensorFlow pipelines, and strengthened virtual assistant accuracy which kickstarted my passion for language-driven systems.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Projects</h2>
+          </div>
+          <p class="section-subtitle">Case studies that highlight explainability, risk mitigation, and stakeholder storytelling.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" onclick="openModal(0)">
+            <div class="project-tag">XAI · Vision</div>
+            <h3>Autonomous Vehicle Safety (XAI)</h3>
+            <p>Scaled an interpretability lab for 10K+ AV frames, combining CRAFT, TCAV, and custom Grad-CAM dashboards to kill false brake triggers and lift pedestrian recall 18%.</p>
+            <button type="button">Explore details</button>
+          </article>
+          <article class="project-card" onclick="openModal(1)">
+            <div class="project-tag">Healthcare</div>
+            <h3>Skin Cancer Detection</h3>
+            <p>Published a MobileNet oncology workflow, from data governance to explainability, that sustains 82% accuracy on dermoscopic feeds while running on <$50 edge boxes.</p>
+            <button type="button">Explore details</button>
+          </article>
+          <article class="project-card" onclick="openModal(2)">
+            <div class="project-tag">Analytics</div>
+            <h3>Online Sales Analysis</h3>
+            <p>Activated 1.2M commerce rows, layering ANOVA + uplift models to surface price elasticity plays that moved margin 12% in pilot markets.</p>
+            <button type="button">Explore details</button>
+          </article>
+          <article class="project-card" onclick="openModal(3)">
+            <div class="project-tag">Trust &amp; Safety</div>
+            <h3>Job Posting Classifier</h3>
+            <p>Shipped a fraud brain for job boards: TF-IDF plus ensemble explainers that flag urgency spam, perks inflation, and credential gaps before posts go live.</p>
+            <button type="button">Explore details</button>
+          </article>
+          <article class="project-card" onclick="openModal(4)">
+            <div class="project-tag">Developer Tools</div>
+            <h3>Auto Code Generation</h3>
+            <p>Built a Streamlit + LangChain command center that pairs GPT agents with guardrails so PMs draft analytics pipelines, tests, and docs in minutes.</p>
+            <button type="button">Explore details</button>
+          </article>
+          <article class="project-card" onclick="openModal(5)">
+            <div class="project-tag">Geo Insights</div>
+            <h3>Marketing Strategy Optimization</h3>
+            <p>Unified ArcGIS StoryMaps with Power BI to expose underperforming territories, letting marketing lift regional ROI 30% without extra spend.</p>
+            <button type="button">Explore details</button>
+          </article>
         </div>
       </div>
+    </section>
 
+    <section id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Recognition</p>
+            <h2>Achievements</h2>
+          </div>
+        </div>
+        <div class="achievement-grid">
+          <article class="achievement-card">
+            <p class="achievement-tag">Competition</p>
+            <h3>SCB Business Analytics Competition Winner</h3>
+            <p>Led SmartAnalytix to evaluate GPT 4, Claude 3, and Mistral across fairness, compliance, and ROI for RIT decision makers.</p>
+            <ul>
+              <li>Benchmarked models on MMLU, TruthfulQA, ARC datasets.</li>
+              <li>Built scoring rubrics aligning with campus governance.</li>
+              <li>Presented an adoption roadmap favoring Claude 3 with privacy guardrails.</li>
+            </ul>
+            <div class="achievement-actions">
+              <a href="https://www.rit.edu/business/business-analytics-competition" target="_blank" class="btn text-link">View event</a>
+              <a href="projects/SCB.pdf" target="_blank" class="btn text-link">See presentation</a>
+            </div>
+          </article>
+          <article class="achievement-card">
+            <p class="achievement-tag">Research</p>
+            <h3>Skin Cancer Detection Publication</h3>
+            <p>MobileNet melanoma detection paper in IJLTET covering augmentation, transfer learning, and clinical relevance.</p>
+            <ul>
+              <li>82% classification accuracy on dermoscopic datasets.</li>
+              <li>Optimized for resource-constrained deployment.</li>
+              <li>Supports clinicians with explainable outputs.</li>
+            </ul>
+            <div class="achievement-actions">
+              <a href="#projects" class="btn text-link">Project details</a>
+              <a href="https://www.ijltet.org/pdfviewer.php?id=961&j_id=4929" target="_blank" class="btn text-link">Read paper</a>
+            </div>
+          </article>
+          <article class="achievement-card">
+            <p class="achievement-tag">Certification</p>
+            <h3>Oracle Cloud Infrastructure AI suite</h3>
+            <p>Earned OCI Generative AI Professional, AI Foundations Associate, AI Vector Search Professional, and AI Data Science Professional certifications to align enterprise delivery with cloud governance.</p>
+            <ul>
+              <li>Validated RAG design expertise through OCI vector search labs.</li>
+              <li>Documented finetuning and evaluation workflows for compliance teams.</li>
+              <li>Paired credentials with GitHub proof by releasing LangChain and analytics repos.</li>
+            </ul>
+            <div class="achievement-actions">
+              <a href="https://github.com/AchyutKulkarni" target="_blank" class="btn text-link">View GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Let’s build resilient data products.</h2>
+          <p>From founding a community platform to launching regulated edge AI, I come with the battle-tested playbooks, the metrics, and the storytelling exec sponsors need. Reach out and let’s architect the next win.</p>
+          <ul class="contact-list">
+            <li>
+              <div class="contact-icons-row contact-icons-row--large">
+                <a href="mailto:ak6416@rit.edu" class="icon-link" aria-label="Email Achyut Sridhar Kulkarni">
+                  <img src="images/gmail.svg" alt="Email icon">
+                </a>
+                <span class="contact-text"><a href="mailto:ak6416@rit.edu">ak6416@rit.edu</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icons-row contact-icons-row--large">
+                <a href="https://linkedin.com/in/achyutsk" target="_blank" rel="noopener" class="icon-link" aria-label="Achyut Kulkarni on LinkedIn">
+                  <img src="images/linkedin.svg" alt="LinkedIn icon">
+                </a>
+                <span class="contact-text"><a href="https://linkedin.com/in/achyutsk" target="_blank" rel="noopener">linkedin.com/in/achyutsk</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icons-row contact-icons-row--large">
+                <a href="https://github.com/AchyutKulkarni" target="_blank" rel="noopener" class="icon-link" aria-label="Achyut Kulkarni on GitHub">
+                  <img src="images/github.svg" alt="GitHub icon">
+                </a>
+                <span class="contact-text"><a href="https://github.com/AchyutKulkarni" target="_blank" rel="noopener">github.com/AchyutKulkarni</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <form action="https://formspree.io/f/xwplyrzw" method="POST" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Achyut Sridhar Kulkarni. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/achyutsk" target="_blank">LinkedIn</a>
+        <a href="https://github.com/AchyutKulkarni" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <button class="close" onclick="closeModal()" aria-label="Close project details">&times;</button>
+      <h3 id="modalTitle"></h3>
+      <h4>Overview</h4>
+      <p id="modalOverview"></p>
+      <h4>Technical Details</h4>
+      <p id="modalDetails"></p>
+      <h4>Impact</h4>
+      <p id="modalImpact"></p>
+      <div id="modalLogos" class="collaborator-logos"></div>
+      <a id="modalLink" href="#" target="_blank" class="btn primary">View resource</a>
     </div>
   </div>
-</section>
 
-<!-- PROJECTS SECTION -->
-<section id="projects" class="section">
-  <div class="container">
-    <h2 class="section-title">Projects</h2>
-    <div class="project-tile-grid">
+  <script>
+    const projects = [
+      {
+        title: "Autonomous Vehicle Safety (XAI)",
+        overview: "Embedded a cross-functional AV war room that treats explainability as a gating metric for every release.",
+        details: "Stacked CRAFT, TCAV, and bespoke Grad-CAM pipelines over PyTorch detectors, streaming 10K+ drive frames into a review console that ops, safety, and ML teams could co-annotate. Layered BigQuery + Superset dashboards to quantify bias drift in real time.",
+        impact: "Retired two high-profile false brake classes, raised pedestrian recall 18%, and gave Toyota Research Institute audit artifacts regulators could actually use.",
+        url: null,
+        logos: ["logos/TRI.png", "logos/UCI.png", "logos/UFL.png"]
+      },
+      {
+        title: "Skin Cancer Detection",
+        overview: "Turned scrappy clinic scans into a governed MobileNet workflow clinicians trust.",
+        details: "Built reproducible pipelines, spanning dataset versioning, augmentation recipes, and SHAP overlays, for IJLTET-published melanoma detection. Optimized MobileNetV2 for ARM edge deployment so rural partners can triage patients offline.",
+        impact: "Sustained 82% accuracy in the field, cut specialist review time ~25%, and provided explainability cards nurses can show patients.",
+        url: "https://www.ijltet.org/pdfviewer.php?id=961&j_id=4929"
+      },
+      {
+        title: "Online Sales Analysis",
+        overview: "Played quarterback for a commerce command center that unifies pricing, promo, and regional ops.",
+        details: "Instrumented dbt-style models over 1.2M rows, ran ANOVA/uplift modeling to isolate promo cannibalization, and packaged insights into Power BI playbooks marketing could rerun without engineering.",
+        impact: "Unlocked 12% incremental margin across two pilot cohorts and systematized how GTM teams test offers.",
+        url: "https://github.com/AchyutKulkarni/CustomerDataAnalysis"
+      },
+      {
+        title: "Job Posting Classifier",
+        overview: "Gave trust & safety teams a pre-publication polygraph for job boards.",
+        details: "Combined TF-IDF, BERT embeddings, and lightweight explainers so policy analysts can see exactly which phrases triggered fraud scores. Built FastAPI service hooks + Airflow monitoring for live deployment.",
+        impact: "Cut fraudulent postings reaching applicants by 37% beta-to-beta and freed moderators to focus on escalations instead of triage.",
+        url: "https://github.com/AchyutKulkarni/FakeJobPosting"
+      },
+      {
+        title: "Auto Code Generation",
+        overview: "Productized a guardrailed GPT co-pilot for analytics teams that can’t wait on sprint cycles.",
+        details: "Married Streamlit, LangChain, LangGraph, and OpenAI APIs with sandboxed execution, inline docs, and git export so PMs spawn data workflows plus unit tests from prompts.",
+        impact: "Condensed prototype cycles from days to minutes and doubled adoption of internal tooling among analysts.",
+        url: "https://github.com/AchyutKulkarni/AutoCodeGen"
+      },
+      {
+        title: "Marketing Strategy Optimization",
+        overview: "Mapped every marketing dollar to geography, saturation, and persona so CMOs stop guessing.",
+        details: "Wove ArcGIS StoryMaps, Power BI, and demographic enrichment APIs into a single pane that recommends territory-specific tactics and syncs with Salesforce.",
+        impact: "Let the client reallocate 18% of spend toward high-yield corridors and sustain a 30% uplift in regional engagement.",
+        url: "https://storymaps.arcgis.com/stories/edc86425dff2487db303583815694147"
+      }
+    ];
 
-      <div class="project-tile" onclick="openModal(0)">
-        <img src="projects/XAI.jpeg" alt="Autonomous Vehicle Safety" class="tile-image" />
-        <div class="tile-overlay"><p class="project-title">Autonomous Vehicle Safety (XAI)</p></div>
-      </div>
+    function openModal(index) {
+      const project = projects[index];
+      document.getElementById('modalTitle').textContent = project.title;
+      document.getElementById('modalOverview').textContent = project.overview;
+      document.getElementById('modalDetails').textContent = project.details;
+      document.getElementById('modalImpact').textContent = project.impact;
 
-      <div class="project-tile" onclick="openModal(1)">
-        <img src="projects/SkinCancer.jpg" alt="Skin Cancer Detection" class="tile-image" />
-        <div class="tile-overlay"><p class="project-title">Skin Cancer Detection</p></div>
-      </div>
+      const logosContainer = document.getElementById('modalLogos');
+      logosContainer.innerHTML = '';
+      if (project.logos && project.logos.length > 0) {
+        project.logos.forEach(src => {
+          const img = document.createElement('img');
+          img.src = src;
+          img.alt = "Collaborator logo";
+          logosContainer.appendChild(img);
+        });
+      }
 
-      <div class="project-tile" onclick="openModal(2)">
-        <img src="projects/customerDA.jpg" alt="Online Sales Analysis" class="tile-image" />
-        <div class="tile-overlay"><p class="project-title">Online Sales Analysis</p></div>
-      </div>
+      const link = document.getElementById('modalLink');
+      if (project.url) {
+        link.href = project.url;
+        link.style.display = 'inline-block';
+      } else {
+        link.style.display = 'none';
+      }
 
-      <div class="project-tile" onclick="openModal(3)">
-        <img src="projects/fake_job.jpeg" alt="Job Posting Classifier" class="tile-image" />
-        <div class="tile-overlay"><p class="project-title">Job Posting Classifier</p></div>
-      </div>
-
-      <div class="project-tile" onclick="openModal(4)">
-        <img src="projects/code_generator.jpg" alt="Auto Code Generation" class="tile-image" />
-        <div class="tile-overlay"><p class="project-title">Auto Code Generation</p></div>
-      </div>
-
-      <div class="project-tile" onclick="openModal(5)">
-        <img src="projects/ArcGIS.png" alt="Marketing Strategy Optimization" class="tile-image" />
-        <div class="tile-overlay"><p class="project-title">Marketing Strategy Optimization</p></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Modal -->
-<div id="projectModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h3 id="modalTitle"></h3>
-    <h4>Overview</h4>
-    <p id="modalOverview"></p>
-    <h4>Technical Details</h4>
-    <p id="modalDetails"></p>
-    <h4>Impact</h4>
-    <p id="modalImpact"></p>
-    <div id="modalLogos" class="collaborator-logos"></div>
-    <a id="modalLink" href="#" target="_blank">View</a>
-  </div>  
-</div>
-
-<!-- ACHIEVEMENTS SECTION -->
-<section id="achievements" class="section">
-  <div class="container">
-    <h2 class="section-title">Achievements</h2>
-
-    <div class="achievement-card">
-      <h3>🏆 RIT Business Analytics Competition — Winner (Team Leader)</h3>
-      <p>
-        As team lead of <strong>SmartAnalytix</strong>, I led our winning strategy in the SCB Business Analytics Competition 2025. We evaluated AI platforms—GPT-4, Claude 3, and Mistral—across performance, cost, privacy, and usability to recommend the best fit for RIT.
-      </p>
-      <ul>
-        <li>Built a scoring system evaluating LLMs on fairness, compliance, and ROI.</li>
-        <li>Benchmarked Claude 3 and GPT-4 on MMLU, TruthfulQA, and ARC datasets.</li>
-        <li>Recommended Claude 3 with a clear roadmap for campus-wide deployment.</li>
-      </ul>
-      <p><strong>Impact:</strong> Our holistic strategy won top honors and was recognized for ethical and technical excellence.</p>
-      <div class="achievement-buttons">
-        <a href="https://www.rit.edu/business/business-analytics-competition" class="btn" target="_blank">View Details</a>
-        <a href="projects/SCB.pdf" class="btn outline" download target="_blank">See Presentation (PDF)</a>
-      </div>
-    </div>
-
-    <div class="achievement-card">
-      <h3>📄 Research Publication — Skin Cancer Detection using MobileNet</h3>
-      <p>
-        Published my research on deep learning-based melanoma detection using MobileNet in the International Journal of Latest Trends in Engineering and Technology (IJLTET). The project demonstrates how lightweight CNNs can support early diagnosis using dermoscopic images.
-      </p>
-      <ul>
-        <li>Achieved 82% classification accuracy on publicly available datasets.</li>
-        <li>Applied data augmentation and transfer learning to address data scarcity.</li>
-        <li>Explored real-world applications in clinical decision-making tools.</li>
-      </ul>
-      <p><strong>Impact:</strong> Provides scalable solutions for affordable early cancer screening tools, aiding healthcare access in resource-constrained regions.</p>
-      <div class="achievement-buttons">
-        <a href="#projects" class="btn">View Project</a>
-        <a href="https://www.ijltet.org/pdfviewer.php?id=961&j_id=4929" class="btn outline" target="_blank">Read Paper</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container footer-content">
-    <p>© 2025 Achyut Sridhar Kulkarni | All rights reserved.</p>
-    <div class="footer-links">
-      <a href="https://linkedin.com/in/achyutsk" target="_blank">LinkedIn</a>
-      <a href="https://github.com/AchyutKulkarni" target="_blank">GitHub</a>
-    </div>
-  </div>
-</footer>
-
-<!-- PROJECTS DATA + SCRIPT -->
-<script>
-  const projects = [
-    {
-      title: "Autonomous Vehicle Safety (XAI)",
-      overview: "Exploring the black box of AI decision-making in autonomous vehicles to enhance interpretability and safety.",
-      details: "Implemented explainable AI techniques like CRAFT and TCAV on object detection models to visualize which image regions influenced decisions. Used PyTorch and custom Grad-CAM logic to flag false pedestrian detections, reducing unnecessary braking incidents.",
-      impact: "Improved model transparency and reduced false positives, enhancing both trust and operational reliability in AV systems.",
-      url: null,
-      logos: ["logos/TRI.png", "logos/UCI.png", "logos/UFL.png"]
-    },
-    {
-      title: "Skin Cancer Detection",
-      overview: "Designed an AI-based diagnostic tool for early melanoma detection using deep learning.",
-      details: "Built a MobileNet model with transfer learning and data augmentation to classify dermoscopic images. Achieved 82% accuracy, optimized for mobile deployment in low-resource clinics.",
-      impact: "Enabled scalable, real-time screening for early cancer detection, aiding access to healthcare in remote regions.",
-      url: "https://www.ijltet.org/pdfviewer.php?id=961&j_id=4929"
-    },
-    {
-      title: "Online Sales Analysis",
-      overview: "Identified trends and insights from e-commerce data to guide strategic marketing decisions.",
-      details: "Performed EDA, regression modeling, and hypothesis testing on sales data. Created visual dashboards to highlight trends by region, time, and product category. Tools used: Python, pandas, Seaborn, ANOVA.",
-      impact: "Helped optimize promotion timing and product targeting, improving overall sales effectiveness.",
-      url: "https://github.com/AchyutKulkarni/CustomerDataAnalysis"
-    },
-    {
-      title: "Job Posting Classifier",
-      overview: "Developed a fraud detection system to protect users from fake job listings.",
-      details: "Processed textual job post data using TF-IDF and trained classification models including logistic regression and Random Forest. Identified red flags like exaggerated perks, urgency language, and missing credentials.",
-      impact: "Enhanced job seeker safety by flagging fraudulent listings and improving platform credibility.",
-      url: "https://github.com/AchyutKulkarni/FakeJobPosting"
-    },
-    {
-      title: "Auto Code Generation",
-      overview: "Enabled natural language-driven Python code generation for rapid prototyping and learning.",
-      details: "Built a Streamlit app that integrates GPT-based models and LangChain to convert plain language prompts into code. Supports tasks like plotting, data processing, and ML pipelines with live explanations.",
-      impact: "Boosted developer productivity and made coding accessible to non-technical users.",
-      url: "https://github.com/AchyutKulkarni/AutoCodeGen"
-    },
-    {
-      title: "Marketing Strategy Optimization",
-      overview: "Mapped marketing campaign results to geography to uncover high-performing zones.",
-      details: "Used ArcGIS StoryMaps to visualize customer response data with location overlays. Integrated external demographic data for deeper insights and created interactive dashboards for stakeholders.",
-      impact: "Informed region-specific outreach strategies, leading to better ROI on campaigns.",
-      url: "https://storymaps.arcgis.com/stories/edc86425dff2487db303583815694147"
+      document.getElementById('projectModal').classList.add('visible');
+      document.body.classList.add('modal-open');
     }
-  ];
 
-  function openModal(index) {
-    const project = projects[index];
-    document.getElementById('modalTitle').textContent = project.title;
-    document.getElementById('modalOverview').textContent = project.overview;
-    document.getElementById('modalDetails').textContent = project.details;
-    document.getElementById('modalImpact').textContent = project.impact;
-    const logosContainer = document.getElementById('modalLogos');
-    logosContainer.innerHTML = '';
-    if (project.logos && project.logos.length > 0) {
-      project.logos.forEach(src => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.alt = "Collaborator Logo";
-        img.classList.add('collaborator-logo');
-        logosContainer.appendChild(img);
-      });
+    function closeModal() {
+      document.getElementById('projectModal').classList.remove('visible');
+      document.body.classList.remove('modal-open');
     }
-
-    const link = document.getElementById('modalLink');
-    if (project.url) {
-      link.href = project.url;
-      link.style.display = 'inline-block';
-    } else {
-      link.style.display = 'none';
-    }
-
-    document.getElementById('projectModal').style.display = 'block';
-  }
-
-  function closeModal() {
-    document.getElementById("projectModal").style.display = "none";
-  }
-</script>
-
-
-<!-- 100% privacy-first analytics -->
-<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<script async src="https://scripts.simpleanalyticscdn.com/auto-events.js"></script>
-
+  </script>
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <script async src="https://scripts.simpleanalyticscdn.com/auto-events.js"></script>
 </body>
 </html>
