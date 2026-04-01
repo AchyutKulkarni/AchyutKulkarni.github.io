@@ -419,13 +419,13 @@
             <p class="eyebrow">Selected work</p>
             <h2>Projects</h2>
           </div>
-          <p class="section-subtitle">Case studies that highlight explainability, risk mitigation, and stakeholder storytelling.</p>
+          <p class="section-subtitle">Case studies across explainability, healthcare AI, BI systems, agentic automation, and production-grade stakeholder storytelling.</p>
         </div>
         <div class="project-grid">
           <article class="project-card" onclick="openModal(0)">
             <div class="project-tag">XAI · Vision</div>
             <h3>Autonomous Vehicle Safety (XAI)</h3>
-            <p>Scaled an interpretability lab for 10K+ AV frames, combining CRAFT, TCAV, and custom Grad-CAM dashboards to kill false brake triggers and lift pedestrian recall 18%.</p>
+            <p>Built an AV explainability capstone around CRAFT, TCAV, and concept-level vision analysis to expose why safety models overreact to edge-case scenes.</p>
             <button type="button">Explore details</button>
           </article>
           <article class="project-card" onclick="openModal(1)">
@@ -456,6 +456,24 @@
             <div class="project-tag">Geo Insights</div>
             <h3>Marketing Strategy Optimization</h3>
             <p>Unified ArcGIS StoryMaps with Power BI to expose underperforming territories, letting marketing lift regional ROI 30% without extra spend.</p>
+            <button type="button">Explore details</button>
+          </article>
+          <article class="project-card" onclick="openModal(6)">
+            <div class="project-tag">Applied AI · Healthcare</div>
+            <h3>MedGemma Edge CT Triage</h3>
+            <p>Built a notebook-driven MedGemma pipeline that turns chest CT slices into structured scan summaries and triage artifacts for downstream review.</p>
+            <button type="button">Explore details</button>
+          </article>
+          <article class="project-card" onclick="openModal(7)">
+            <div class="project-tag">Agentic Automation</div>
+            <h3>Job Application Agent</h3>
+            <p>Engineered a Playwright-based agent that discovers roles, routes resumes, drafts outreach, and automates ATS workflows with bounded local AI assist.</p>
+            <button type="button">Explore details</button>
+          </article>
+          <article class="project-card" onclick="openModal(8)">
+            <div class="project-tag">BI Case Study</div>
+            <h3>IMPaCT Care BI Case Study</h3>
+            <p>Delivered a business-intelligence case study pairing hospital-to-home funnel analysis with a self-serve reporting architecture for account teams.</p>
             <button type="button">Explore details</button>
           </article>
         </div>
@@ -595,10 +613,10 @@
     const projects = [
       {
         title: "Autonomous Vehicle Safety (XAI)",
-        overview: "Embedded a cross-functional AV war room that treats explainability as a gating metric for every release.",
-        details: "Stacked CRAFT, TCAV, and bespoke Grad-CAM pipelines over PyTorch detectors, streaming 10K+ drive frames into a review console that ops, safety, and ML teams could co-annotate. Layered BigQuery + Superset dashboards to quantify bias drift in real time.",
-        impact: "Retired two high-profile false brake classes, raised pedestrian recall 18%, and gave Toyota Research Institute audit artifacts regulators could actually use.",
-        url: null,
+        overview: "Built my capstone around making autonomous-vehicle perception failures interpretable instead of treating false triggers as black-box incidents.",
+        details: "Combined CRAFT, TCAV, and YOLO-based concept analysis to study which human-interpretable cues were driving unsafe or unstable model behavior across AV scenes. The public repo packages the explainability experiments into a cleaner research artifact, linking concept extraction, concept activation vectors, and vision-model debugging in one place.",
+        impact: "Created a reusable explainability workflow for safety-critical vision models and turned scattered capstone experiments into a shareable XAI research repo with concrete audit trails.",
+        url: "https://github.com/AchyutKulkarni/vision-concept-explainability",
         logos: ["logos/TRI.png", "logos/UCI.png", "logos/UFL.png"]
       },
       {
@@ -635,6 +653,28 @@
         details: "Wove ArcGIS StoryMaps, Power BI, and demographic enrichment APIs into a single pane that recommends territory-specific tactics and syncs with Salesforce.",
         impact: "Let the client reallocate 18% of spend toward high-yield corridors and sustain a 30% uplift in regional engagement.",
         url: "https://storymaps.arcgis.com/stories/edc86425dff2487db303583815694147"
+      },
+      {
+        title: "MedGemma Edge CT Triage",
+        overview: "Turned MedGemma into a practical CT triage workflow that converts slices into structured findings instead of raw model chatter.",
+        details: "Built a notebook-driven chest CT pipeline that preprocesses NIfTI volumes, selects informative slices, runs MedGemma on slice-level prompts, normalizes outputs into controlled findings, and aggregates them into scan-level summaries, urgency labels, and exportable triage artifacts.",
+        impact: "Bridged multimodal medical inference with analyst-friendly outputs, showing how generative models can support structured radiology-style review instead of staying stuck in free-form text.",
+        url: "https://github.com/AchyutKulkarni/medgemma-edge-ct-triage"
+      },
+      {
+        title: "Job Application Agent",
+        overview: "Built a modular browser agent for end-to-end application workflows instead of a brittle one-off apply bot.",
+        details: "The system uses Playwright for ATS automation, environment-first configuration, resume routing, optional local LLM support for cover letters and field mapping, local state persistence, and optional Google Sheets logging. It supports multiple ATS providers through isolated handlers and service modules.",
+        impact: "Shows product-minded agent engineering: bounded automation, operational state, configurable workflows, and clear separation between browser actions, data services, and AI-assisted steps.",
+        url: "https://github.com/AchyutKulkarni/job-application-agent"
+      },
+
+      {
+        title: "IMPaCT Care BI Case Study",
+        overview: "Packaged an interview submission into a clean BI portfolio artifact centered on operational metrics and reporting architecture.",
+        details: "The case study analyzes the Hospital to Home funnel from outreach through graduation, then proposes a scalable self-serve reporting system with ingestion, modeling, semantic-layer design, metric governance, QA strategy, and customer-facing delivery paths.",
+        impact: "Shows the combination of analytical rigor and stakeholder-oriented system design that BI roles actually demand: KPI framing, data-quality assumptions, communication, and platform thinking.",
+        url: "https://github.com/AchyutKulkarni/impact-care-bi-case-study"
       }
     ];
 
